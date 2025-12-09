@@ -1,0 +1,21 @@
+public class Organismo {
+    protected String scientificName;
+    protected String commonName;
+    protected String origin;
+
+    public Organismo(String scientificName, String commonName, String origin) {
+        this.scientificName = scientificName;
+        this.commonName = commonName;
+        this.origin = origin;
+    }
+
+    public void mostrarInfo() {
+        System.out.println("Nombre científico: " + scientificName);
+        System.out.println("Nombre común: " + commonName);
+        System.out.println("Origen: " + origin);
+    }
+
+    public void respirar() {
+        System.out.println(commonName + " está realizando intercambio gaseoso 🌿");
+    }
+}
